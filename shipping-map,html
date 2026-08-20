@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping Map - Leigh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #000000;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .head {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(106, 97, 229, 0.3);
+    }
+    .wordmark {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px; font-weight: 700; color: #6a61e5;
+      letter-spacing: -0.5px; margin-bottom: 20px;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 40px; font-weight: 700; color: #ffffff;
+      line-height: 1.15; margin-bottom: 10px;
+    }
+    .sub { font-size: 16px; color: #999999; font-weight: 500; }
+    .section { margin-bottom: 40px; }
+    .section-num {
+      display: inline-block;
+      font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: #6a61e5;
+      background: rgba(106, 97, 229, 0.12);
+      padding: 5px 14px; border-radius: 999px; margin-bottom: 16px;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px; font-weight: 700; color: #ffffff; margin-bottom: 16px;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid rgba(106, 97, 229, 0.25);
+      border-radius: 14px; padding: 24px 26px; margin-bottom: 16px;
+    }
+    p { color: #e6e6e6; margin-bottom: 12px; font-size: 16px; }
+    p:last-child { margin-bottom: 0; }
+    .label { color: #6a61e5; font-weight: 600; }
+    a { color: #6a61e5; word-break: break-all; }
+    .live-address {
+      font-size: 20px; font-weight: 600; display: block; margin: 8px 0 4px;
+    }
+    .stack-row {
+      display: flex; gap: 16px; padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .stack-row:last-child { border-bottom: none; }
+    .stack-name {
+      font-weight: 700; color: #6a61e5; min-width: 110px;
+      font-size: 15px; letter-spacing: 0.5px;
+    }
+    .stack-desc { color: #e6e6e6; font-size: 15px; }
+    .gap {
+      background: rgba(106, 97, 229, 0.08);
+      border-left: 3px solid #6a61e5;
+      padding: 14px 18px; border-radius: 8px; margin-top: 18px;
+      font-size: 15px; color: #cccccc;
+    }
+    .beats { list-style: none; counter-reset: beat; }
+    .beats li {
+      counter-increment: beat; position: relative;
+      padding: 12px 0 12px 44px; color: #e6e6e6; font-size: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .beats li:last-child { border-bottom: none; }
+    .beats li::before {
+      content: counter(beat);
+      position: absolute; left: 0; top: 12px;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #6a61e5; color: #ffffff;
+      font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tagline {
+      font-family: "Poppins", "Manrope", sans-serif; font-weight: 500;
+      font-size: 15px; color: #6a61e5; text-align: center; margin-top: 8px;
+    }
+    .foot {
+      text-align: center; margin-top: 48px; padding-top: 28px;
+      border-top: 1px solid rgba(106, 97, 229, 0.3);
+      font-size: 13px; color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="wordmark">Leap</div>
+      <h1>Shipping Map</h1>
+      <p class="sub">Leigh · Agentic AI for Business · Mission 6 of 6 · 20 August 2026</p>
+    </div>
+
+    <div class="section">
+      <span class="section-num">1 · Shipped</span>
+      <div class="card">
+        <p><span class="label">My live address:</span></p>
+        <a class="live-address" href="https://my-first-ship-eight.vercel.app/">https://my-first-ship-eight.vercel.app/</a>
+        <p><span class="label">What it is:</span> A clean, Leap-branded one-page card that speaks to my team — my name, my role, a thank-you message, and an open-door invitation to come and talk.</p>
+        <p><span class="label">Date shipped:</span> 20 August 2026 — live on the internet, at an address I built and I control.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-num">2 · The Stack</span>
+      <h2>The four tools</h2>
+      <div class="card">
+        <div class="stack-row">
+          <div class="stack-name">CLAUDE</div>
+          <div class="stack-desc">Wrote the code — the complete <code>index.html</code> page for my team, and then the updated Leap-branded version.</div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-name">GITHUB</div>
+          <div class="stack-desc">Stored the code — my <code>my-first-ship</code> repository holds every saved version of the page, and keeps the history so nothing is ever lost.</div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-name">VERCEL</div>
+          <div class="stack-desc">Shipped it live — imported the repository, deployed the page to a public <code>.vercel.app</code> address, and redeployed by itself the moment the code changed.</div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-name">SUPABASE</div>
+          <div class="stack-desc">Logs the transaction — the database in the stack. Not set up today, but it's the piece that would give my page a memory.</div>
+        </div>
+        <div class="gap">
+          <span class="label">The Supabase gap my page still has:</span> my page is live but has no memory. There are no logins, no saved data, and no transaction log — if someone visited, filled a form, or clicked a button, nothing anywhere would record it. That gap is the difference between a live page and a real product.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-num">3 · The Loop</span>
+      <h2>The change I made</h2>
+      <div class="card">
+        <p>I aligned the page's branding to Leap — black, white and Leap Purple, with the Leap wordmark and the tagline "Technology that works, so people can." Here's how it shipped, in three beats:</p>
+        <ol class="beats">
+          <li>I changed the code — pasted the new Leap-branded version into <code>index.html</code>.</li>
+          <li>I committed it to GitHub — saved the new version to my repository.</li>
+          <li>Vercel shipped it by itself — it noticed the change and redeployed the live site with no button pressed by me.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-num">4 · Next Ship</span>
+      <h2>What I'd build next</h2>
+      <div class="card">
+        <p><span class="label">The product I'd change:</span> HaloPSA — I wished the reporting was easier to build.</p>
+        <p><span class="label">My small alternative:</span> A dashboard my managers can open to review ticket details against a skill already in use, at four depths of review ranging in detail and analysis — primarily for spotting trends around service quality, process improvement, and engineer skill improvement.</p>
+        <p><span class="label">My first step:</span> Describe the one core flow to the AI — a manager opening a ticket and choosing a review depth — and ship version one the same way I shipped today.</p>
+      </div>
+    </div>
+
+    <p class="tagline">Technology that works, so people can</p>
+    <div class="foot">
+      Shipping Map · Leigh · Final certification submission · Agentic AI for Business · AI Officer Institute
+    </div>
+  </div>
+</body>
+</html>
